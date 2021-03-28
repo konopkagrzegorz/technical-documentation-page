@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>SQL Documentation</header>
+      <ul>
+        <li class="nav-link">
+          <a href="#what_is_sql">What is SQL?</a>
+        </li>
+        <li class="nav-link">
+          <a href="#what_sql_can_do">What SQL can do?</a>
+        </li>
+        <li class="nav-link">
+          <a href="#sql_syntax">SQL syntax</a>
+        </li>
+        <li class="nav-link">
+          <a href="#sql_select">Select</a>
+        </li>
+        <li class="nav-link">
+          <a href="#sql_where">Where</a>
+        </li>
+        <li class="nav-link">
+          <a href="#sql_insert">Insert</a>
+        </li>
+        <li class="nav-link">
+          <a href="#sql_update">Update</a>
+        </li>
+        <li class="nav-link">
+          <a href="#sql_delete">Delete</a>
+        </li>
+        <li class="nav-link">
+          <a href="#sql_references">References</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+  <main id="main-doc">
+    <section class="main-section" id="#what_is_sql">
+      <header>What is SQL?</header>
+      <ul>
+        <li>SQL stands for Structured Query Language</li>
+        <li>SQL lets you access and manipulate databases</li>
+        <li>
+          SQL became a standard of the American National Standards Institute
+          (ANSI) in 1986, and of the International Organization for
+          Standardization (ISO) in 1987
+        </li>
+      </ul>
+    </section>
+    <section class="main-section" id="#what_sql_can_do">
+      <header>What SQL can do?</header>
+      <ul>
+        <li>SQL can execute queries against a database</li>
+        <li>SQL can retrieve data from a database</li>
+        <li>SQL can insert records in a database</li>
+        <li>SQL can update records in a database</li>
+        <li>SQL can delete records from a database</li>
+        <li>SQL can create new databases</li>
+        <li>SQL can create new tables in a database</li>
+        <li>SQL can create stored procedures in a database</li>
+        <li>SQL can create views in a database</li>
+        <li>SQL can set permissions on tables, procedures, and views</li>
+      </ul>
+    </section>
+    <section class="main-section" id="sql_syntax">
+      <header>SQL Syntax</header>
+      <ul>
+        <li>SELECT - extracts data from a database</li>
+        <li>UPDATE - updates data in a database</li>
+        <li>DELETE - deletes data from a database</li>
+        <li>INSERT INTO - inserts new data into a database/li></li>
+        <li>CREATE DATABASE - creates a new database</li>
+        <li>ALTER DATABASE - modifies a database</li>
+        <li>CREATE TABLE - creates a new table</li>
+        <li>ALTER TABLE - modifies a table</li>
+        <li>DROP TABLE - deletes a table</li>
+        <li>CREATE INDEX - creates an index (search key)</li>
+        <li>DROP INDEX - deletes an index</li>
+      </ul>
+    </section>
+    <section class="main-section" id="sql_select">
+      <header>SQL SELECT statement</header>
+      <code>SELECT column1, column2, ... FROM table_name;</code>
+    </section>
+    <section class="main-section" id="sql_where">
+      <header>SQL WHERE statement</header>
+      <code>SELECT column1, column2, ... FROM table_name WHERE condition;</code>
+    </section>
+    <section class="main-section" id="sql_insert">
+      <header>SQL INSERT INTO statement</header>
+      <code
+        >INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1,
+        value2, value3, ...);</code
+      >
+    </section>
+    <section class="main-section" id="sql_update">
+      <header>SQL UPDATE statementt</header>
+      <code
+        >UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE
+        condition;</code
+      >
+    </section>
+    <section class="main-section" id="sql_delete">
+      <header>SQL DELETE statement</header>
+      <code>DELETE FROM table_name WHERE condition;</code>
+    </section>
+    <section class="main-section" id="sql_references">
+      <header>SQL keywords list</header>
+      <ul>
+        <li>
+          ADD CONSTRAINT Adds a constraint after a table is already created
+        </li>
+        <li>ADD Adds a column in an existing table</li>
+        <li>
+          ALTER Adds, deletes, or modifies columns in a table, or changes the
+          data type of a column in a table
+        </li>
+        <li>ALTER COLUMN Changes the data type of a column in a table</li>
+        <li>ALTER TABLE Adds, deletes, or modifies columns in a table</li>
+        <li>
+          ALL Returns true if all of the subquery values meet the condition
+        </li>
+        <li>AND Only includes rows where both conditions is true</li>
+        <li>
+          ANY Returns true if any of the subquery values meet the condition
+        </li>
+        <li>AS Renames a column or table with an alias</li>
+        <li>ASC Sorts the result set in ascending order</li>
+        <li>BACKUP DATABASE Creates a back up of an existing database</li>
+        <li>BETWEEN Selects values within a given range</li>
+        <li>CASE Creates different outputs based on conditions</li>
+        <li>
+          CHECK A constraint that limits the value that can be placed in a
+          column
+        </li>
+        <li>
+          COLUMN Changes the data type of a column or deletes a column in a
+          table
+        </li>
+        <li>CONSTRAINT Adds or deletes a constraint</li>
+        <li>CREATE Creates a database, index, view, table, or procedure</li>
+        <li>CREATE DATABASE Creates a new SQL database</li>
+        <li>
+          CREATE INDEX Creates an index on a table (allows duplicate values)
+        </li>
+        <li>CREATE OR REPLACE VIEW Updates a view</li>
+        <li>CREATE TABLE Creates a new table in the database</li>
+        <li>CREATE PROCEDURE Creates a stored procedure</li>
+        <li>
+          CREATE UNIQUE INDEX Creates a unique index on a table (no duplicate
+          values)
+        </li>
+        <li>
+          CREATE VIEW Creates a view based on the result set of a SELECT
+          statement
+        </li>
+        <li>DATABASE Creates or deletes an SQL database</li>
+        <li>DEFAULT A constraint that provides a default value for a column</li>
+        <li>DELETE Deletes rows from a table</li>
+        <li>DESC Sorts the result set in descending order</li>
+        <li>DISTINCT Selects only distinct (different) values</li>
+        <li>
+          DROP Deletes a column, constraint, database, index, table, or view
+        </li>
+        <li>DROP COLUMN Deletes a column in a table</li>
+        <li>
+          DROP CONSTRAINT Deletes a UNIQUE, PRIMARY KEY, FOREIGN KEY, or CHECK
+          constraint
+        </li>
+        <li>DROP DATABASE Deletes an existing SQL database</li>
+        <li>DROP DEFAULT Deletes a DEFAULT constraint</li>
+        <li>DROP INDEX Deletes an index in a table</li>
+        <li>DROP TABLE Deletes an existing table in the database</li>
+        <li>DROP VIEW Deletes a view</li>
+        <li>EXEC Executes a stored procedure</li>
+        <li>EXISTS Tests for the existence of any record in a subquery</li>
+        <li>
+          FOREIGN KEY A constraint that is a key used to link two tables
+          together
+        </li>
+        <li>FROM Specifies which table to select or delete data from</li>
+        <li>
+          FULL OUTER JOIN Returns all rows when there is a match in either left
+          table or right table
+        </li>
+        <li>
+          GROUP BY Groups the result set (used with aggregate functions: COUNT,
+          MAX, MIN, SUM, AVG)
+        </li>
+        <li>HAVING Used instead of WHERE with aggregate functions</li>
+        <li>IN Allows you to specify multiple values in a WHERE clause</li>
+        <li>INDEX Creates or deletes an index in a table</li>
+        <li>
+          INNER JOIN Returns rows that have matching values in both tables
+        </li>
+        <li>INSERT INTO Inserts new rows in a table</li>
+        <li>
+          INSERT INTO SELECT Copies data from one table into another table
+        </li>
+        <li>IS NULL Tests for empty values</li>
+        <li>IS NOT NULL Tests for non-empty values</li>
+        <li>JOIN Joins tables</li>
+        <li>
+          LEFT JOIN Returns all rows from the left table, and the matching rows
+          from the right table
+        </li>
+        <li>LIKE Searches for a specified pattern in a column</li>
+        <li>
+          LIMIT Specifies the number of records to return in the result set
+        </li>
+        <li>NOT Only includes rows where a condition is not true</li>
+        <li>
+          NOT NULL A constraint that enforces a column to not accept NULL values
+        </li>
+        <li>OR Includes rows where either condition is true</li>
+        <li>ORDER BY Sorts the result set in ascending or descending order</li>
+        <li>
+          OUTER JOIN Returns all rows when there is a match in either left table
+          or right table
+        </li>
+        <li>
+          PRIMARY KEY A constraint that uniquely identifies each record in a
+          database table
+        </li>
+        <li>PROCEDURE A stored procedure</li>
+        <li>
+          RIGHT JOIN Returns all rows from the right table, and the matching
+          rows from the left table
+        </li>
+        <li>
+          ROWNUM Specifies the number of records to return in the result set
+        </li>
+        <li>SELECT Selects data from a database</li>
+        <li>SELECT DISTINCT Selects only distinct (different) values</li>
+        <li>SELECT INTO Copies data from one table into a new table</li>
+        <li>
+          SELECT TOP Specifies the number of records to return in the result set
+        </li>
+        <li>
+          SET Specifies which columns and values that should be updated in a
+          table
+        </li>
+        <li>
+          TABLE Creates a table, or adds, deletes, or modifies columns in a
+          table, or deletes a table or data inside a table
+        </li>
+        <li>TOP Specifies the number of records to return in the result set</li>
+        <li>
+          TRUNCATE TABLE Deletes the data inside a table, but not the table
+          itself
+        </li>
+        <li>
+          UNION Combines the result set of two or more SELECT statements (only
+          distinct values)
+        </li>
+        <li>
+          UNION ALL Combines the result set of two or more SELECT statements
+          (allows duplicate values)
+        </li>
+        <li>
+          UNIQUE A constraint that ensures that all values in a column are
+          unique
+        </li>
+        <li>UPDATE Updates existing rows in a table</li>
+        <li>VALUES Specifies the values of an INSERT INTO statement</li>
+        <li>VIEW Creates, updates, or deletes a view</li>
+        <li>
+          WHERE Filters a result set to include only records that fulfill a
+          specified condition
+        </li>
+      </ul>
+    </section>
+  </main>
+  >>>>>>> c3dd61e (initial commit)
+</html>
